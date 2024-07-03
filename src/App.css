@@ -1,3 +1,17 @@
+/*
+下面三行分别引入tailwind的基础样式 组件样式 工具样式  
+*/
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+/* 封装抽象部分样式 */
+@layer components {
+  .btn-primary {
+    @apply text-base p-1 border border-black border-solid hover:text-[30px];
+  }
+}
+
 .App {
   text-align: center;
 }
